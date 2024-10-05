@@ -1,0 +1,80 @@
+
+.listBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    background-color: #1f1f20;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.listBlock:hover {
+    background-color: #313132;
+}
+
+.avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.avatar img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.chatInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 15px;
+    overflow: hidden;
+}
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.topName h3 {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1; 
+    max-width: calc(100% - 10px);
+}
+
+
+.blockTime {
+    color: #8e8e8e;
+    font-size: 12px;
+    white-space: nowrap;
+    margin-left: 10px;
+    min-width: 50px; 
+    text-align: right; 
+}
+
+
+.chatInfo p {
+    margin: 0;
+    color: #bdbdbd;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

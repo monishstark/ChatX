@@ -1,0 +1,76 @@
+
+body {
+    background-color: #191919;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .label {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 320px;
+  }
+  
+  input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background-color: #191919;
+    border: 2px solid #5a5a5a;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  input[type="tel"]:focus {
+    border-color: #835dbb;
+  }
+  
+  input[type="tel"]::placeholder {
+    color: #888888;
+  }
+
+  .input-wrapper .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  }
+  
+
+  input[type="checkbox"] {
+    accent-color: #835dbb;
+    width: 16px;
+    height: 16px;
+  }
+  
+
+  button {
+    width: 320px;
+    padding: 12px;
+    background-color: #835dbb;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #9d74e4;
+  }
+  

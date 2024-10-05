@@ -1,0 +1,49 @@
+.message-bubble {
+    max-width: 60%;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    word-wrap: break-word;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .message-bubble.sender {
+    background-color: #0088cc;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+    border-bottom-right-radius: 0;
+    width: auto;
+  }
+  
+  .message-bubble.receiver {
+    background-color: #e5e5ea;
+    color: black;
+    align-self: flex-start;
+    margin-right: auto;
+    border-bottom-left-radius: 0;
+    width: auto;
+  }
+  
+  .message-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .message-bubble.sender::after {
+    border-left: 12px solid #0088cc;
+    border-top: 12px solid transparent;
+    right: -10px;
+  }
+  
+  .message-bubble.receiver::after {
+    border-right: 12px solid #e5e5ea;
+    border-top: 12px solid transparent;
+    left: -10px;
+  }
+  
